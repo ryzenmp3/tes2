@@ -7,7 +7,9 @@
         link.id   = cssId;
         link.rel  = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'styles.css';
+        // link.href = 'styles.css';
+        // gunakan css sperti dibawah untuk penggunaan blogger ,
+        link.href = 'https://naskahkode.github.io/tes2/styles.css';
         link.media = 'all';
         head.appendChild(link);
     }
@@ -17,8 +19,10 @@
     var inimodal = document.createElement("DIV");
     inimodal.innerHTML = ` <div id="myModal" class="modal">
                             <span class="close g_url">&times;</span>
-                            <img class="modal-content ads-img" id="img01"  src="img.jpg">
+                            <img class="modal-content ads-img" id="img01"  src="https://naskahkode.github.io/tes2/img.jpg">
                            </div>`;
+    // ganti link gambar pada popup modal diatas sesuai kebutuhan
+
     document.body.appendChild(inimodal);
     var modal = document.getElementById("myModal");
     var span = document.getElementsByClassName("close")[0];
@@ -33,6 +37,7 @@
     var g_confirm = current.includes('c=1');
     // var go_ads = "/";
     var go_ads = "https://www.google.com";
+    // ganti link google diatas sesuai kebutuhan
 
     $(document).ready(function () {
         if (!g_confirm && !go_ads.includes('#YOUR')) {
