@@ -43,6 +43,7 @@
         if (!g_confirm && !go_ads.includes('#YOUR')) {
             $(window).scroll(function (event) {
                 var scroll = $(window).scrollTop();
+                // popup akan muncul setelah pada di scroll sebanyak 225px
                 if (scroll >= 225) {
                     modal.style.display = "block";
                     // $('#popbox').removeClass('hide');
